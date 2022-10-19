@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="empty">0dp</dimen>
+    <dimen name="margin_low">4dp</dimen>
+    <dimen name="margin_base_low">6dp</dimen>
+    <dimen name="margin_half">8dp</dimen>
+    <dimen name="margin_base_minus">12dp</dimen>
+    <dimen name="margin_base">16dp</dimen>
+    <dimen name="margin_plus">20dp</dimen>
+    <dimen name="margin_base_plus">24dp</dimen>
+    <dimen name="margin_big">36dp</dimen>
+    <dimen name="padding_base">16dp</dimen>
+    <dimen name="padding_base_plus">24dp</dimen>
+
+    <dimen name="corner_radius">10dp</dimen>
+    <dimen name="bg_card_view_corner_radius">4dp</dimen>
+    <dimen name="divider_left_margin">90dp</dimen>
+    <dimen name="avatar_size">40dp</dimen>
+    <dimen name="avatar_margin">20dp</dimen>
+    <dimen name="bottom_sheet_pick_height">72dp</dimen>
+    <dimen name="instruction_title_margin_top">18dp</dimen>
+
+    <dimen name="rectangle_rounded_corner_size">2dp</dimen>
+    <dimen name="rectangle_rounded_height">4dp</dimen>
+    <dimen name="rectangle_rounded_width">34dp</dimen>
+
+    <dimen name="min_height_card_item">138dp</dimen>
+    <dimen name="min_height_moneybox_card_item">186dp</dimen>
+    <dimen name="max_height_card_item">218dp</dimen>
+    <dimen name="radius_round_card_item">8dp</dimen>
+    <dimen name="card_margin_start_image_payment_system">5dp</dimen>
+    <dimen name="card_max_width_label_last_number">60dp</dimen>
+    <dimen name="card_margin_start_last_number">10dp</dimen>
+    <dimen name="card_margin_top_title_limit_range">5dp</dimen>
+    <dimen name="card_margin">3dp</dimen>
+    <dimen name="card_placeholder_padding_top">32dp</dimen>
+
+    <dimen name="user_avatar_header_size">50dp</dimen>
+    <dimen name="height_placeholder_line">5dp</dimen>
+    <dimen name="size_edge_piggy_bank_image">40dp</dimen>
+    <dimen name="min_height_piggy_bank_container">80dp</dimen>
+    <dimen name="piggy_bank_margin_top">10dp</dimen>
+    <dimen name="width_placeholder_text_balance_piggy_bank">48dp</dimen>
+    <dimen name="padding_start_text_range_limit">32dp</dimen>
+    <dimen name="card_small_padding">4dp</dimen>
+    <dimen name="corner_radius_small_card">4dp</dimen>
+    <dimen name="card_small_margin_start">6dp</dimen>
+    <dimen name="width_placeholder_line_max">110dp</dimen>
+    <dimen name="width_placeholder_line_min">75dp</dimen>
+    <dimen name="margin_top_placeholder_line">10dp</dimen>
+    <dimen name="card_margin_bottom_limit_text">12dp</dimen>
+    <dimen name="small_card_width">48dp</dimen>
+    <dimen name="small_cards_height">32dp</dimen>
+    <dimen name="small_card_margin_end">6dp</dimen>
+    <dimen name="small_card_body_margin_bottom">4dp</dimen>
+    <dimen name="small_card_body_margin_top">4dp</dimen>
+    <dimen name="small_card_pan_margin">4dp</dimen>
+    <dimen name="small_card_form_factor_margin">4dp</dimen>
+    <dimen name="small_card_height_icon_payment_system">8dp</dimen>
+    <dimen name="small_card_margin_payment_system">4dp</dimen>
+    <dimen name="small_card_width_icon_notify">16dp</dimen>
+    <dimen name="small_card_height_icon_notify">16dp</dimen>
+    <dimen name="small_card_padding_icon_notify">2dp</dimen>
+    <dimen name="small_card_yet_width">24dp</dimen>
+    <dimen name="small_card_yet_height">24dp</dimen>
+    <dimen name="small_card_height_icon_form_factor">8dp</dimen>
+    <dimen name="small_card_count_margin_end">25dp</dimen>
+    <dimen name="small_card_text_margin_end">13dp</dimen>
+
+    <dimen name="personal_account_margin_top">8dp</dimen>
+
+    <dimen name="avatar_placeholder_radius">100dp</dimen>
+    <dimen name="order_close_margin">24dp</dimen>
+
+    <dimen name="avatar_orders_margin">14dp</dimen>
+    <dimen name="filled_box_radius">1dp</dimen>
+    <dimen name="filled_box_height">5dp</dimen>
+    <dimen name="filled_box_margin_start">25dp</dimen>
+
+    <dimen name="login_finger_margin_top">32dp</dimen>
+    <dimen name="login_lock_margin_top">59dp</dimen>
+    <dimen name="login_pin_enter_margin_top">65dp</dimen>
+    <dimen name="login_pin_indicator_margin_start">25dp</dimen>
+    <dimen name="login_pin_indicator_size">12dp</dimen>
+    <dimen name="radius_round_btn">4dp</dimen>
+    <dimen name="margin_image_type_operation">12dp</dimen>
+    <dimen name="operation_margin_top_name">14dp</dimen>
+    <dimen name="operation_margin_bottom_description">14dp</dimen>
+    <dimen name="divider_operation_left_margin">80dp</dimen>
+    <dimen name="operation_status_size">16dp</dimen>
+
+    <dimen name="enter_phone_title_margin_top">65dp</dimen>
+    <dimen name="enter_phone_margin_top">53dp</dimen>
+    <dimen name="enter_phone_margin_start">32dp</dimen>
+
+    <dimen name="sms_code_margit_top">39dp</dimen>
+    <dimen name="sms_code_retry_margit_top">27dp</dimen>
+    <dimen name="pin_code_margin">32dp</dimen>
+    <dimen name="card_moneybox_margin_bottom_text_status">4dp</dimen>
+    <dimen name="min_height_dialog_target_cards">100dp</dimen>
+
+    <dimen name="create_pincode_margin_top_indicator">20dp</dimen>
+    <dimen name="create_pincode_repeat_margin_top">24dp</dimen>
+    <dimen name="fingerprint_miss_margin_end">24dp</dimen>
+    <dimen name="fingerprint_miss_margin_top">26dp</dimen>
+    <dimen name="fingerprint_include_margin_bottom">50dp</dimen>
+    <dimen name="fingerprint_include_margin">95dp</dimen>
+
+
+    <dimen name="create_pincode_height_pin_enter">150dp</dimen>
+    <dimen name="actionbar_margin_start_title">80dp</dimen>
+    <dimen name="text_size_title_piggy_bank_actionbar">20sp</dimen>
+    <dimen name="operation_size_icon_block">64dp</dimen>
+    <dimen name="operation_margin_end_image_status">7dp</dimen>
+    <dimen name="operation_margin_bottom_image_status">8dp</dimen>
+    <dimen name="operation_padding_image_status">2dp</dimen>
+    <dimen name="target_card_item_padding_top">14dp</dimen>
+    <dimen name="target_card_item_padding_bottom">14dp</dimen>
+    <dimen name="target_card_item_margin_start_name_card">72dp</dimen>
+    <dimen name="piggy_bank_margin_top_block_buttons">27dp</dimen>
+
+    <dimen name="toolbar_text_size">20sp</dimen>
+    <dimen name="toolbar_title_margin">40dp</dimen>
+
+    <dimen name="card_padding">24dp</dimen>
+    <dimen name="status_padding">16dp</dimen>
+
+    <dimen name="title_font_size">17sp</dimen>
+    <dimen name="description_font_size">16sp</dimen>
+
+    <dimen name="button_text_size">14sp</dimen>
+
+    <dimen name="settings_nav_icon_size">24dp</dimen>
+    <dimen name="settings_title_margin">40dp</dimen>
+    <dimen name="settings_avatar_size">70dp</dimen>
+    <dimen name="settings_camera_size">30dp</dimen>
+    <dimen name="settings_border_height">1dp</dimen>
+    <dimen name="settings_border_margin_low">1dp</dimen>
+    <dimen name="settings_item_height">48dp</dimen>
+
+    <dimen name="crop_title_margin">51dp</dimen>
+    <dimen name="button_common_height">36dp</dimen>
+
+    <dimen name="keyboard_text_size">32dp</dimen>
+    <dimen name="keyboard_button_normal_size">72dp</dimen>
+    <dimen name="change_pincode_margin">40dp</dimen>
+    <dimen name="change_theme_margin">40dp</dimen>
+    <dimen name="change_pincode_margin_small">20dp</dimen>
+    <dimen name="change_pincode_height">12dp</dimen>
+    <dimen name="padding_bottom_avatar_settings">24dp</dimen>
+    <dimen name="paddin_top_avatar_settings">8dp</dimen>
+    <dimen name="dialog_btn_ok_min_width">106dp</dimen>
+    <dimen name="dialog_btn_ok_margin_end">14dp</dimen>
+    <dimen name="dialog_btn_ok_margin_start">14dp</dimen>
+    <dimen name="dialog_text_margin_top">4dp</dimen>
+    <dimen name="dialog_btn_cancel_margin_end">14dp</dimen>
+    <dimen name="transfer_view_title_margin">9dp</dimen>
+
+    <dimen name="task_indicator_height">10dp</dimen>
+    <dimen name="task_pending_indicator_height">17dp</dimen>
+    <dimen name="indicator_padding">2dp</dimen>
+    <dimen name="indicator_task_size">8dp</dimen>
+    <dimen name="indicator_pending_task_size">13dp</dimen>
+
+    <dimen name="splash_bg_top">-200dp</dimen>
+    <dimen name="splash_bg_side">-230dp</dimen>
+
+    <dimen name="card_elevation">4dp</dimen>
+
+    <!--DetailHistoryDialog-->
+    <dimen name="detail_history_margin_touch_view">8dp</dimen>
+    <dimen name="detail_history_height_touch_view">4dp</dimen>
+    <dimen name="detail_history_width_touch_view">26dp</dimen>
+    <dimen name="detail_history_size_transfer_type_image">64dp</dimen>
+    <dimen name="detail_history_margin_transfer_type_image">44dp</dimen>
+    <dimen name="detail_history_margin_transfer_title">18dp</dimen>
+    <dimen name="detail_history_margin_transfer_value">16dp</dimen>
+    <dimen name="detail_history_margin_transfer_status">4dp</dimen>
+    <dimen name="detail_history_margin_top_descriptioin">40dp</dimen>
+    <dimen name="detail_history_padding_description">16dp</dimen>
+    <dimen name="detail_history_height_description">137dp</dimen>
+    <dimen name="detail_history_text_normal">14sp</dimen>
+    <dimen name="detail_history_text_low">12sp</dimen>
+    <dimen name="detail_history_text_big">20sp</dimen>
+    <dimen name="detail_history_status_compound_drawable_padding">7dp</dimen>
+    <dimen name="status_icon_size">13dp</dimen>
+
+    <dimen name="pin_success_icon_size">64dp</dimen>
+
+    <dimen name="margin_bottom_button_action">76dp</dimen>
+    <dimen name="login_margin_bottom_button_action">@dimen/margin_bottom_button_action</dimen>
+    <dimen name="input_password_margin_bottom_button_action">@dimen/margin_bottom_button_action</dimen>
+    <dimen name="sport_item_size_card">52dp</dimen>
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="drawer_height_menu_row_general">52dp</dimen>
+    <dimen name="drawer_height_menu_row_additional">44dp</dimen>
+    <dimen name="event_page_size_btn_statistics">32dp</dimen>
+    <dimen name="min_height_row_item_list">53dp</dimen>
+    <dimen name="min_height_row_sub_item_list">49dp</dimen>
+
+    <dimen name="odd_item_min_heght_row">180dp</dimen>
+
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="bottom_navigation_padding">90dp</dimen>
+    <dimen name="min_height_list_item_with_switch">56dp</dimen>
+
+    <dimen name="event_page_divider_height">1dp</dimen>
+
+    <dimen name="casino_tab_width">88dp</dimen>
+    <dimen name="casino_tab_height">70dp</dimen>
+</resources>

@@ -1,0 +1,260 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'  // Google Services plugin
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'com.google.firebase.firebase-perf'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+// Set the properties within `local.properties` into a `Properties` class so
+// that values within `local.properties` (e.g. Maps API key) are accessible in
+// this file.
+Properties properties = new Properties()
+if (rootProject.file("local.properties").exists()) {
+    properties.load(rootProject.file("local.properties").newDataInputStream())
+}
+def mapsApiKey = properties.getProperty("MAPS_API_KEY", "")
+
+android {
+
+    compileSdkVersion target_sdk
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+
+    packagingOptions {
+        exclude 'META-INF/proguard/androidx-annotations.pro'
+    }
+    defaultConfig {
+        applicationId "com.bet_planet.android"
+        minSdkVersion min_sdk
+        targetSdkVersion target_sdk
+        versionCode version_code
+        versionName version_name
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField("Integer", "BASE_TEST_PORT", "8080")
+
+        resValue "string", "maps_api_key", mapsApiKey
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    signingConfigs {
+        debug {
+            def keystoreProperties = new Properties()
+            keystoreProperties.load(new FileInputStream(file("keystore.properties")))
+
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+        }
+        release {
+            def keystoreProperties = new Properties()
+            keystoreProperties.load(new FileInputStream(file("keystore.properties")))
+            //storeFile file(keystoreProperties['storeFileProd'])
+            //storePassword keystoreProperties['storePasswordProd']
+            //keyAlias keystoreProperties['keyAliasProd']
+            //keyPassword keystoreProperties['keyPasswordProd']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+        }
+    }
+
+    buildTypes {
+
+        release {
+            minifyEnabled true
+            shrinkResources true
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+            debuggable true
+        }
+    }
+
+    flavorDimensions "api"
+    productFlavors {
+        productionGhana {
+            resConfigs "en"
+            dimension "api"
+
+            
+            manifestPlaceholders = [
+                    fileProvider: "com.bet_planet.android.fileprovider",
+                    orientation : "portrait"
+            ]
+        }
+        stagingGhana {
+            resConfigs "en"
+            dimension "api"
+
+            applicationIdSuffix '.debug'
+
+            manifestPlaceholders = [
+                    fileProvider: "com.bet_planet.android.fileprovider.staging",
+                    orientation : "portrait"
+            ]
+        }
+        productionMadagascar {
+            resConfigs "en", "mg", "fr"
+            dimension "api"
+
+            applicationIdSuffix '.madagascar'
+            // versionNameSuffix '.madagascar'
+
+            manifestPlaceholders = [
+                    fileProvider: "com.bet_planet.android.fileprovider.madagascar",
+                    orientation : "portrait"
+            ]
+        }
+        stagingMadagascar {
+            resConfigs "en", "mg", "fr"
+            dimension "api"
+
+            applicationIdSuffix '.debugMg'
+
+            manifestPlaceholders = [
+                    fileProvider: "com.bet_planet.android.fileprovider.staging.madagascar",
+                    orientation : "portrait"
+            ]
+        }
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        test.java.srcDirs += 'src/test/kotlin'
+    }
+
+    lintOptions {
+        abortOnError false
+        warningsAsErrors true
+    }
+
+    testOptions {
+        animationsDisabled = true
+
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation project(':dagger')
+    implementation project(':feature')
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
+    releaseImplementation project(':debug_no_op')
+    debugImplementation project(':debug')
+
+    implementation group: 'com.zendesk', name: 'chat', version: '3.1.0'
+    implementation group: 'com.zendesk', name: 'messaging', version: '5.1.0'
+
+    // Import the BoM for the Firebase platform
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation platform('com.google.firebase:firebase-bom:26.2.0')
+    implementation 'com.google.firebase:firebase-messaging-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation 'com.google.firebase:firebase-perf-ktx'
+    implementation 'com.google.firebase:firebase-storage-ktx'
+
+
+    implementation 'com.clevertap.android:clevertap-android-sdk:4.0.1'
+    implementation "androidx.core:core-ktx:$core_ktx_version"
+    implementation 'com.android.installreferrer:installreferrer:2.1'
+
+
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+
+    implementation "com.google.android.material:material:$material_version"
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation "androidx.appcompat:appcompat:$appcompat_version"
+    implementation "androidx.constraintlayout:constraintlayout:$constraint_layout_version"
+    implementation "androidx.paging:paging-runtime-ktx:$paging"
+    // security crypto
+    implementation "androidx.security:security-crypto:$security_crypto"
+
+    implementation "com.google.dagger:dagger:$dagger_version"
+    implementation "com.google.dagger:dagger-android:$dagger_version"
+    implementation "com.google.dagger:dagger-android-support:$dagger_version"
+    kapt "com.google.dagger:dagger-compiler:$dagger_version"
+    kapt "com.google.dagger:dagger-android-processor:$dagger_version"
+
+    implementation "ru.terrakok.cicerone:cicerone:$cicerone_version"
+
+    implementation 'com.github.bosphere.android-filelogger:filelogger:1.0.7'
+
+//  implementation "com.crashlytics.sdk.android:crashlytics:$fabric_version"
+
+    testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:$mockito_kotlin_version"
+    testImplementation "junit:junit:$junit_version"
+    testImplementation "org.assertj:assertj-core:$assertj_version"
+    testImplementation("org.robolectric:robolectric:$robolectric_version")
+    testImplementation "com.squareup.okhttp3:mockwebserver:$mockwebserver_version"
+    testImplementation "android.arch.core:core-testing:$core_testing_version"
+    kaptTest "com.google.dagger:dagger-compiler:$dagger_version"
+
+    androidTestImplementation "androidx.test:runner:$test_runner_version"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_version"
+
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    kapt "com.github.bumptech.glide:compiler:$glide_version"
+
+    implementation "com.androidadvance:topsnackbar:$top_snackbar_version"
+
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okHttpVersion"
+    implementation "com.google.code.gson:gson:$gsonVersion"
+    implementation "androidx.biometric:biometric:$biometricVersion"
+    implementation "com.redmadrobot:inputmask:$phone_mask_version"
+    implementation("com.alimuzaffar.lib:pinentryedittext:$pin_entry_version") {
+        exclude group: 'androidx.appcompat', module: 'appcompat'
+    }
+
+    implementation "ru.surfstudio.android:easyadapter:$easy_adapter"
+    implementation "ru.surfstudio.android:easyadapter-pagination:$easy_adapter"
+    implementation "com.wang.avi:library:$avi"
+
+    implementation 'com.github.warkiz.tickseekbar:tickseekbar:0.1.4'
+    implementation 'com.otaliastudios:cameraview:2.6.4'
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+
+    debugImplementation 'com.readystatesoftware.chuck:library:1.1.0'
+    releaseImplementation 'com.readystatesoftware.chuck:library-no-op:1.1.0'
+
+    compileOnly 'com.github.pengrad:jdk9-deps:1.0'
+
+    implementation 'com.google.code.findbugs:jsr305:3.0.2'
+    
+    implementation "com.github.blongho:worldCountryData:$worldCountryDataVersion"
+
+    implementation 'io.github.inflationx:calligraphy3:3.1.1'
+    implementation 'io.github.inflationx:viewpump:2.0.3'
+}
+
+kapt {
+    useBuildCache = true
+}
+
+androidExtensions {
+    experimental = true
+}

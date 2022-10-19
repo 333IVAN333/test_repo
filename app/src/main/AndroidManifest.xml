@@ -1,0 +1,126 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bet_planet.android">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- для загрузки доков в КУС -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- для загрузки доков в КУС -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- для загрузки доков в КУС -->
+
+    <!-- Mobile Messaging permissions -->
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="${applicationId}.permission.C2D_MESSAGE" />
+
+    <permission
+        android:name="${applicationId}.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Needed for push notifications that contain VIBRATE flag. Optional, but recommended. -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <!-- /Mobile Messaging permissions -->
+
+    <application
+        android:name=".SampleApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:resizeableActivity="false"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.New"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:allowBackup"
+        tools:targetApi="n">
+
+        <!-- Workaround for API lvl 28-->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.bet_planet.android.presentation.main.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="${orientation}"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme.New.Launcher"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+			
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https"
+                    android:host="sports.betplanet.com.gh"
+                    android:pathPrefix="/sharedraft" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https"
+                    android:host="sports.betplanet.com.gh"
+                    android:pathPrefix="/shareticket" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".presentation.finance.webview.FinanceWebviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".presentation.storelocator.StoreLocatorActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".domain.push.FirebaseCloudMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_app_notification" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${fileProvider}"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+
+        <receiver
+            android:name="com.clevertap.android.sdk.pushnotification.CTPushNotificationReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!--
+             The API key for Google Maps-based APIs.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/maps_api_key" />
+
+    </application>
+</manifest>

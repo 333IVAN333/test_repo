@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PinCodeIndicatorView">
+        <attr name="pin_indicator_count" format="integer" />
+        <attr name="pin_indicator_empty_color" format="color" />
+        <attr name="pin_indicator_filled_color" format="color" />
+        <attr name="pin_indicator_error_color" format="color" />
+        <attr name="pin_indicator_size" format="dimension" />
+        <attr name="pin_indicator_margin_start" format="dimension" />
+        <attr name="android:gravity" />
+    </declare-styleable>
+
+    <declare-styleable name="TitleSubtitleSwitch">
+        <attr name="switch_title" format="string" />
+        <attr name="switch_subtitle" format="string" />
+        <attr name="switch_checked" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ParallaxBackgroundView">
+        <attr name="hasShadow" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="BetToolbar">
+        <attr name="bet_toolbar_title" format="reference" />
+        <attr name="bet_toolbar_title_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="AmountWithFractionView">
+        <attr name="fractionStyle" format="reference" />
+    </declare-styleable>
+
+    <attr format="color" name="betTextColorPrimary"/>
+    <attr format="color" name="betTextColorSecondary"/>
+    <attr format="color" name="betTextBorderlessButton"/>
+</resources>

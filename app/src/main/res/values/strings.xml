@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="today">Today</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_accept">Accept</string>
+
+    <string name="error_common">An error has occurred</string>
+    <string name="error_no_internet">No Internet connection</string>
+    <string name="error_connection">Connection error</string>
+
+    <string name="pin_code_digits" translatable="false">1234567890</string>
+
+    <string name="password_incorrect">Incorrect passwords</string>
+
+    <string name="something_gone_wrong">Something went wrong</string>
+    <string name="try_again_later">Please, try again later</string>
+    <string-array name="something_gone_wrong_retry_array">
+        <item>Everything will be working soon.\nTry refreshing the screen.</item>
+        <item>Everything will be working soon.\nTry refreshing the screen.</item>
+    </string-array>
+    <string-array name="no_internet_array">
+        <item>No connection to the Internet,\nplease check your connection</item>
+        <item>No connection to the Internet,\nplease check your connection</item>
+    </string-array>
+
+    <string name="keyboard_button_1" translatable="false">1</string>
+    <string name="keyboard_button_2" translatable="false">2</string>
+    <string name="keyboard_button_3" translatable="false">3</string>
+    <string name="keyboard_button_4" translatable="false">4</string>
+    <string name="keyboard_button_5" translatable="false">5</string>
+    <string name="keyboard_button_6" translatable="false">6</string>
+    <string name="keyboard_button_7" translatable="false">7</string>
+    <string name="keyboard_button_8" translatable="false">8</string>
+    <string name="keyboard_button_9" translatable="false">9</string>
+    <string name="keyboard_button_0" translatable="false">0</string>
+
+    <string name="login_phone_field">Phone</string>
+    <string name="login_country_field">Country</string>
+    <string name="login_no_selected_item_country">Select from the list</string>
+    <string name="login_header_text">Please confirm your country code \nand enter phone number</string>
+    <string name="login_support">Сontact us</string>
+
+    <string name="input_pass_header_text">To login by number\n%s enter your password</string>
+    <string name="input_pass_password">Password</string>
+    <string name="input_sms_code">SMS Code</string>
+    <string name="input_pass_password_new">New password</string>
+    <string name="restore_password_button">Restore Password</string>
+    <string name="feature_in_development" translatable="false">Feature in developing</string>
+
+    <string name="drawer_deposit">DEPOSIT</string>
+    <string name="menu_item_deposit">Deposit</string>
+    <string name="menu_item_game_history">Game history</string>
+    <string name="menu_item_transactions">Transactions</string>
+    <string name="menu_item_sports">Sports</string>
+    <string name="menu_item_promotions">Promotions</string>
+    <string name="menu_item_live_chat">Live Chat</string>
+    <string name="menu_item_about_us">ABOUT US</string>
+    <string name="menu_item_language">Language</string>
+    <string name="menu_item_log_out">LOG OUT</string>
+    <string name="menu_item_statistics">Statistics</string>
+    <string name="menu_item_favorite">Favorite</string>
+
+    <string name="all_tournaments_title_screen">ALL TOURNAMENTS</string>
+    <string name="no_bets_description">This event is over.\n You can no longer bet on it.</string>
+    <string name="no_bets_description_temp_suspend">Betting is temporarily \nsuspended</string>
+    <string name="bet_value_format" translatable="false">%.2f</string>
+    <string name="next">Next</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="close">Close</string>
+    <string name="country">Country</string>
+    <string name="details">Details</string>
+    <string name="no_one_found">No results</string>
+    <string name="filters">Filters</string>
+    <string name="reset">Reset</string>
+    <string name="all">All</string>
+    <string name="select_a_period">Select a period</string>
+    <string name="from">From</string>
+    <string name="before">Before</string>
+    <string name="done">Done</string>
+    <string name="cashout">Cashout</string>
+    <string name="back">Back</string>
+
+    <!-- singIn/singUp -->
+    <string name="reset_password_header_text">Please create a new password and enter the code that we sent to\n%s via SMS</string>
+    <string name="verify_sms_request_code_again">Request code again</string>
+    <string name="verify_sms_request_code_again_after">Request code again after %s</string>
+    <string name="enter_personal_data_header">You will be registered by number\n%s</string>
+    <string name="enter_personal_data_birthday_title">Birth Date</string>
+    <string name="enter_personal_data_terms">I confirm that I am over 18 years age, I have read and agree with <annotation dest="">terms &amp; conditions</annotation></string>
+    <string name="question_pincode_header">Do you want to set up a PIN code for login?</string>
+    <string name="question_pincode_set_up_btn">Set up pin code</string>
+    <string name="question_pincode_later_btn">Set up later</string>
+    <string name="enter_your_country">Enter your country</string>
+    <string name="enter_your_phone">Enter your phone</string>
+    <string name="wrong_code">Wrong code</string>
+
+    <string name="sign_out_btn">Sign Out</string>
+    <string name="pincode_check_title">Welcome Back!</string>
+    <string name="pincode_check_subtitle">Enter password to continue</string>
+    <string name="pincode_setup_title">PIN code</string>
+    <string name="pincode_setup_subtitle">Please enter a new PIN code</string>
+    <string name="pincode_confirm_subtitle">Please repeat your PIN code</string>
+    <string name="pincode_no_match">The PIN codes do not match</string>
+    <string name="pincode_wrong">The PIN code is incorrect.</string>
+    <string name="pincode_fingerprint">The PIN code</string>
+    <string name="go_to_settings">Go to \'Settings -> Security -> Fingerprint\' and register at least one fingerprint</string>
+    <string name="secure_lock_screen">Secure lock screen hasn\'t been set up.\nGo to \'Settings -> Security -> Fingerprint\' to set up a fingerprint</string>
+    <string name="fingerprint_offer_title">Fingerprint login</string>
+    <string name="fingerprint_offer_subtitle">Do you want to use a fingerprint for login?</string>
+    <string name="fingerprint_positive_btn">Use fingerprint</string>
+    <string name="fingerprint_negative_btn">Cancel</string>
+    <string name="required_field">Required field</string>
+    <string name="password_conditions">It must be at least 4 characters long and contain upper and lower case English letters, digit and non-word character</string>
+    <string name="sms_code_incorrect">Please, enter code</string>
+    <string name="create_a_new_password">Create a new password</string>
+    <string name="password_recovery">Password recovery</string>
+    <string name="confirm">Confirm</string>
+    <string name="load_more">Load more</string>
+    <string name="try_again">Try again</string>
+    <string name="see_all_bets">See all bets</string>
+
+    <string name="error_unable_check_phone">Unable to check phone number</string>
+    <string name="error_register_text">Can\'t register user! Please, check entered data</string>
+
+    <string name="game_history_details_id_title">ID</string>
+    <string name="game_history_details_status_title">Status</string>
+    <string name="game_history_details_bet_time_title">Bet date &amp; time</string>
+    <string name="game_history_details_bet_amount_title">Bet amount</string>
+    <string name="game_history_details_gain_title">Gain</string>
+    <string name="game_history_details_bonus_title">Bonus</string>
+    <string name="game_history_details_total_gain_title">Total gain</string>
+    <string name="game_history_details_possible_gain_title">Possible gain</string>
+    <string name="game_history_details_match_title">Match</string>
+    <string name="game_history_details_event_title">Event</string>
+    <string name="game_history_details_odds_title">Odds</string>
+    <string name="game_history_details_total_odds_title">Total odds</string>
+    <string name="game_history_details_match_time_title">Match date &amp; time</string>
+    <string name="game_history_details_event_index_title">Event #%d</string>
+    <string name="game_history_details_cash_out_title">Cash Out</string>
+    <string name="game_history_details_partial_cash_out_title">Partial Cash Out</string>
+
+    <string name="game_status_losing">Lost</string>
+    <string name="game_status_winning">Won</string>
+    <string name="game_status_expected">Expected</string>
+    <string name="game_status_cashed_out">Cashed out</string>
+
+    <string name="game_history_list_title">Game history</string>
+    <string name="game_history_list_empty_text">Place bets to see your game history</string>
+    <string name="game_history_list_empty_btn">Make a bet</string>
+    <string name="game_history_list_no_auth_text">Please login or register</string>
+    <string name="game_history_list_expected_odds">Expected\n%s</string>
+    <string name="game_history_list_event_name_pattern">%d outcomes: Multiple</string>
+    <string name="game_history_list_cashout_hine">Amount</string>
+    <string name="game_history_list_cashout_button_text">CASHOUT | %s</string>
+    <string name="game_history_list_cashout_button_text_bold_part" translatable="false">@string/cashout</string>
+    <string name="game_history_list_cashout_success_text">You have successfully Cashout</string>
+    <string name="game_history_system">System</string>
+
+    <string name="cash_out_confirm_title">Are you sure you want to sell your bet?</string>
+    <string name="cash_out_confirm_amount_title">CashOut Amount:</string>
+    <string name="cash_out_confirm_btn_reject">Reject</string>
+    <string name="cash_out_confirm_btn_accept">Accept</string>
+    <string name="cash_out_confirm_offer_changed">The offer has changed</string>
+
+    <string name="leagues_on_24_hours">Next 24 hours</string>
+    <string name="leagues_all_tournaments">All tournaments</string>
+    <string name="coupon_title_page">BET COUPON</string>
+    <string name="coupon_page_tab_single">SINGLE</string>
+    <string name="coupon_page_tab_multiple">MULTIPLE</string>
+    <string name="coupon_bets_remove_all">REMOVE ALL</string>
+    <string name="all_bets_placed">All your bets have been placed.\nThe coupon is empty.</string>
+    <string name="coupon_empty_homepage_button">HOMEPAGE</string>
+    <string name="coupon_empty_game_history_button">GAME HISTORY</string>
+    <string name="bet_coupon_notification_sign_in">Please sign in to place a bet</string>
+    <string name="coupon_bet_deposit_btn">DEPOSIT</string>
+    <string name="coupon_bet_placed">Bet placed</string>
+    <string name="bet_coupon_notification_deposit">Not enough money</string>
+    <string name="bet_coupon_too_many_error">Too many requests error</string>
+    <string name="bet_coupon_notification_minimal_stake">Minimal stake is %s %s</string>
+    <string name="bet_coupon_notification_minimal_need_two_bets">Select at least two events</string>
+    <string name="bet_coupon_notification_minimal_need_three_bets">Select at least three events</string>
+    <string name="bet_coupon_notification_max_can_system_bets">The system can participate no more\nthan 10 odds</string>
+    <string name="bet_coupon_bet_amount">Bet amount</string>
+    <string name="bet_coupon_place_bet_btn">place bet</string>
+    <string name="bet_coupon_use_freebet">Use Freebet</string>
+    <string name="bet_coupon_accept_all_odds_changes">Accept all odds changes</string>
+    <string name="bet_coupon_dont_ask_again">Don\'t ask me again</string>
+    <string name="bet_coupon_error_match_started">Match already started</string>
+    <string name="bet_coupon_error_match_stopped">Match stopped</string>
+    <string name="bet_coupon_bet_not_placed">Bet not placed.</string>
+    <string name="bet_not_placed_common">Betting is temporarily suspended</string>
+    <string name="bet_not_placed_ticked_was_rejected">Ticket was rejected by external system</string>
+    <string name="bet_not_placed_min_combination">Minimum allowed coefficient per combination is %s</string>
+    <string name="bet_not_placed_min_coef_match">Minimum allowed coefficient per match odd is %s</string>
+    <string name="bet_not_placed_invalid_odd_count">Invalid odd count. Min allowed odds 1. Max allowed odds %s</string>
+    <string name="bet_not_placed_you_can_not_combine">You can not combine multiple tournaments or tournament and match from same league</string>
+    <string name="bet_not_placed_you_account_is_blocked">Your account is blocked. Please check Profile settings for details</string>
+    <string name="bet_not_placed_cant_check_status">Failed to check the status of the bet. Please, check it later in games history</string>
+    <string name="bet_coupon_gain_text">Gain: %s %s</string>
+    <string name="coupon_page_bet_value_digits_with_dot">0123456789.</string>
+    <string name="coupon_page_bet_value_digits">0123456789</string>
+    <string name="btn_remove">REMOVE</string>
+    <string name="btn_cancel">CANCEL</string>
+    <string name="bet_paused">PAUSED</string>
+    <string name="transactions_list_title">Transactions</string>
+    <string name="transactions_no_history">Here will be a history of your deposit and withdrawal operations</string>
+    <string name="transactions_no_found_title">Sorry, nothing was found</string>
+    <string name="transactions_no_found_subtitle">Check other dates</string>
+    <string name="transaction_details_title">DETAILS</string>
+    <string name="transaction_status_none">-</string>
+    <string name="transaction_status_success">Success</string>
+    <string name="transaction_status_pending">Pending</string>
+    <string name="transaction_status_failed">Failed</string>
+    <string name="tran_details_trnsaction">Transaction</string>
+    <string name="tran_details_amount">Amount</string>
+    <string name="tran_details_date_time">Date &amp; time</string>
+    <string name="tran_details_type">Type</string>
+    <string name="tran_details_status">Status</string>
+    <string name="tran_details_details">Details</string>
+    <string name="promotions_list_title">PROMOTIONS</string>
+    <string name="promotion_item_details">DETAILS</string>
+    <string name="promo_item_desc_cashback">At BetPlanet we know that from time to time everyone has a bad week. If things don\'t go your way you can still get 10% of your money back with our cashback offer.</string>
+    <string name="promo_item_desc_loyalty_club">Place your first bet to join BetPlanet\'s Exclusive Loyalty Club. Every week you can get up to GH₵ 50 loyalty reward from us.</string>
+    <string name="promo_item_desc_insurance">Our 6+ Acca insurance will give you extra protection for your combi bet. Select 6 or more games and if only one lets you down, we will refund your stake up to 20x!</string>
+    <string name="promo_item_desc_boost">Do you think landing on the moon was huge news? Then how about an extra boost on your potential winnings at BetPlanet! Create your big combi bet to get a massive extra return.</string>
+    <string name="promo_item_desc_refer_and_earn">What is fun if you cannot share it with friends? Be a team player and invite your friends to the BetPlanet game and we will reward you with a bonus up to GH₵ 150! Extra money and friends on board is a win-win situation.</string>
+    <string name="promo_item_desc_welcome_offer">Let\'s get the match started. Kick-off your game with a 100% bonus up to GH₵ 200 and become BetPlanet\'s next shooting star.</string>
+    <string name="promo_details_how_it_works">How it works?</string>
+    <string name="promo_details_terms_and_conditions">Terms and Conditions</string>
+
+    <string name="bet_coupon_agree_changed_bet_text">You can place ticket with \nfollowing options</string>
+    <string name="bet_coupon_agree_changed_bet_title">Suggestion</string>
+    <string name="dialog_coupon_btn_reject">Reject</string>
+    <string name="dialog_coupon_btn_accept">Accept</string>
+    <string name="alt_stake">Alt Stake:</string>
+    <string name="alt_poss_win">Alt Poss Win:</string>
+    <string name="coupon_page_tab_system">SYSTEM</string>
+    <string name="coupon_bet_ok_btn">OK</string>
+    <string name="bet_coupon_count_bets">Total odds for %s bets</string>
+    <string name="coupon_description_boots_promotion">
+        <![CDATA[
+            Get up to 35% <span style="color:#174B84">wining boost</span> by multiple odd selections
+        ]]>
+    </string>
+    <string name="favorites_list_title">FAVORITES</string>
+    <string name="there_are_no_matches_yet">There are no matches yet</string>
+    <string name="save_events_to_favorites_using">Save events to favorites using</string>
+    <string name="view_all">View all</string>
+    <string name="oops_reload_btn">Reload</string>
+    <string name="opps_title">Ooops…</string>
+
+    <!-- DEPOSIT -->
+    <string-array name="finance_titles">
+        <item>Deposit</item>
+        <item>Withdrawal</item>
+    </string-array>
+    <string name="deposit_title">Deposit</string>
+    <string name="balance">Balance</string>
+    <string name="deposit_through">Deposit through</string>
+    <string name="withdrawal_through">Withdraw funds through</string>
+    <string name="limits_fees">Limits &amp; Fees</string>
+    <string name="min_deposit">Minimum deposit %s</string>
+    <string name="min_withdraw">Minimum withdraw %s</string>
+
+    <!-- KYC -->
+    <string name="identification">Identification</string>
+    <string name="identification_name_title">To protect yourself, please enter your name</string>
+    <string name="identification_email_title">Please enter your e-mail and confirm it with a password</string>
+    <string name="identification_doc_type_title">Please confirm your identity with a document</string>
+    <string name="name">First Name</string>
+    <string name="surname">Surname</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="wrong_email_format">Wrong Email format</string>
+    <string name="upload_document">Upload document</string>
+    <string name="document">Document</string>
+    <string name="document_type">Document Type</string>
+    <string name="document_number">Document Number</string>
+    <string name="photo_source_title">Upload from…</string>
+    <string name="photo_source_gallery">Photo Gallery</string>
+    <string name="photo_source_camera">Camera</string>
+    <string name="doc_type_passport">Passport</string>
+    <string name="select_document_type_title">Select document type</string>
+    <string name="back_to_bets">Back to bets</string>
+    <string name="doc_success_title">Your documents \nhave been received</string>
+    <string name="doc_success_description">Withdrawal will be available after checking your documents</string>
+    <string name="doc_upload_title">Please upload document photos</string>
+    <string name="permission_base_rationale">To do this, you need to have permission</string>
+    <string name="choose_app">Choose app</string>
+    <string name="permission_gallery_denied">Storage permission is needed to pick gallery image. Please allow storage permission from Settings > Permissions.</string>
+    <string name="permission_camera_denied">Camera permission is needed to take a photo. Please allow camera permission from Settings > Permissions.</string>
+    <string name="document_scan">Document scan</string>
+
+    <string name="menu_sport">Sport</string>
+    <string name="menu_favorite">Favorites</string>
+    <string name="menu_game_history">History</string>
+    <string name="menu_transactions">Transactions</string>
+    <string name="menu_account">Account</string>
+
+    <!-- casino menu -->
+    <string name="menu_casino">Casino</string>
+    <string name="menu_casino_favorite">Favorites</string>
+    <string name="menu_casino_transactions">Transactions</string>
+    <string name="menu_casino_account">Account</string>
+
+    <!-- About Us -->
+    <string name="about_us_main_title">About Us</string>
+    <string name="about_us_menu_item_contact_us">Contact Us</string>
+    <string name="about_us_menu_item_faq">FAQ</string>
+    <string name="about_us_menu_item_legal">Legal</string>
+    <string name="about_us_menu_item_mobile_app">Mobile App</string>
+    <string name="about_us_menu_item_about_us">About Us</string>
+    <string name="about_us_menu_item_sport_rules">Sport Rules</string>
+    <string name="about_us_menu_item_limits_fees"><![CDATA[Limits & fees]]></string>
+    <string name="about_us_menu_item_terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="about_us_menu_item_responsible_gaming">Responsible Gaming</string>
+    <string name="about_us_menu_item_privacy_policy">Privacy Policy</string>
+    <string name="about_us_menu_item_aml_policy">AML Policy</string>
+    <string name="about_us_menu_item_security">Security</string>
+
+    <string name="about_us_title_email_card">Email</string>
+    <string name="about_us_title_phone_card">Phone</string>
+    <string name="about_us_title_live_chat">Live Chat</string>
+    <string name="about_us_live_chat_description">Chat with an Advisor to resolve a query</string>
+    <string name="about_us_button_live_chat">Start Chat</string>
+
+    <string name="event_page_game_was">"The game was %s"</string>
+
+    <string name="bet_coupon_use_quick_bet">Use Quick Bet</string>
+    <string name="bet_coupon_make_bets_faster">Make bets faster! \nPress and hold odd to make \na quick bet.</string>
+    <string name="bet_coupon_apply_btn">Apply</string>
+    <string name="bet_coupon_quick_bet_amount">Quick Bet Amount</string>
+    <string name="bet_coupon_quick_bet_amount_hint">5</string>
+    <string name="quick_bet_amount_error">Quick bet amount must be greater than 0 %s</string>
+    <string name="quick_bet_settings_saved">Settings saved</string>
+
+    <!-- finance dialogs -->
+    <string name="dialog_finance_instructions">Instructions</string>
+    <string name="dialog_amount_input_label_deposit">Please enter amount to deposit (%s)</string>
+    <string name="dialog_amount_input_label_withdrawal">Please enter amount to withdraw (%s)</string>
+    <string name="dialog_accept_commission_label">Please confirm transaction</string>
+    <string name="dialog_accept_commission_charged">Amount charged: </string>
+    <string name="dialog_accept_commission_commission">Commission: </string>
+    <string name="dialog_accept_commission_deposited">Amount deposited on your account: </string>
+    <string name="dialog_accept_commission_withdrawn">Amount withdrawn from your account: </string>
+
+    <string name="dialog_select_existing_account">Select an existing saved account from below: </string>
+    <string name="dialog_select_existing_account_new">Or add a new one: </string>
+    <string name="dialog_select_existing_account_add">Add New Account</string>
+
+    <string name="dialog_phone_input_label">Please enter your phone number</string>
+    <string name="dialog_otp_input_label">Please enter SMS code received</string>
+    <string name="transaction_item_withdrawal">Withdrawal</string>
+    <string name="transaction_item_casino">Casino</string>
+    <string name="transaction_item_sportbook">Sportbook</string>
+    <string name="transaction_item_adding_funds">Adding funds</string>
+    <string name="dialog_mobile_deposit_success">Your transaction is awaiting approval</string>
+    <string name="dialog_mobile_withdrawal_success">Withdrawal pending…</string>
+    <string name="dialog_wrong_passcode">Wrong passcode!</string>
+
+    <string name="dialog_language_title">Language</string>
+
+    <!-- Profile -->
+    <string name="match_item_live">LIVE</string>
+    <string name="profile_title">Profile</string>
+    <string name="profile_deposit_button_text">DEPOSIT</string>
+    <string name="profile_incognito_mode">Incognito Mode</string>
+    <string name="menu_profile_item_account_details">Account Details</string>
+    <string name="menu_profile_item_responsible_gaming">Responsible Gaming</string>
+    <string name="menu_profile_item_security">Security</string>
+    <string name="menu_profile_quick_bet">Quick Bet</string>
+    <string name="menu_profile_notifications">Notifications</string>
+    <string name="menu_profile_item_promotions">Promotions</string>
+    <string name="menu_profile_item_transaction_history">Transaction History</string>
+    <string name="menu_profile_item_live_chat">Live Chat</string>
+    <string name="menu_profile_item_log_out">Log Out</string>
+    <string name="menu_profile_item_about_us">About Us</string>
+    <string name="menu_profile_change_phone_number">Change Phone Number</string>
+    <string name="menu_profile_change_password">Change Password</string>
+    <string name="menu_profile_document_information">Documents Information</string>
+    <string name="menu_profile_deposit_limits">Deposit Limits</string>
+    <string name="menu_profile_reality_checks">Reality Checks</string>
+    <string name="menu_profile_time_out">Time-Out</string>
+    <string name="menu_profile_self_exclusion">Self-Exclusion</string>
+    <string name="profile_bonuses">%s Bonuses</string>
+
+    <string name="notifications_setting_title">Notifications</string>
+    <string name="notifications_setting_general_notifications">General Notifications</string>
+    <string name="notifications_setting_favorites_notifications">Favorites notifications</string>
+    <string name="notifications_setting_marketing_notifications">Marketing notifications</string>
+    <string name="notifications_setting_match_results">Match results</string>
+    <string name="notifications_setting_coupon_results">Coupon results</string>
+    <string name="notifications_setting_favorite_match_started">Favorite match started</string>
+    <string name="notifications_setting_odds_changed_in_favorite_event">Odds changed in favorite event</string>
+
+    <string name="security_title">Security</string>
+    <string name="security_fingerprint_login">Fingerprint Login</string>
+    <string name="security_change_pin_code">Change PIN Code</string>
+
+    <string name="account_details_title">Account Details</string>
+    <string name="account_details_change_password">Change password</string>
+
+    <string name="responsible_gaming_title">RESPONSIBLE GAMING</string>
+
+    <string name="change_phone_number_title">Phone Number</string>
+    <string name="change_phone_number_your_phone_number">Your phone number:</string>
+    <string name="change_phone_number_enter_new_number">Enter the new number you want to use\nto log in to your account</string>
+    <string name="change_phone_number_change_btn">Change</string>
+    <string name="change_phone_number_enter_sms_code">Please enter the code that we sent\nto +%s via SMS</string>
+    <string name="change_phone_number_confirm_btn">Confirm</string>
+
+    <string name="change_password_title">Change Password</string>
+    <string name="change_password_enter_current_pass">Enter your current password to change \nit to a new one</string>
+    <string name="change_password_next_btn">Next</string>
+    <string name="change_password_enter_new_password">Enter the new password you want \nto use to log in</string>
+    <string name="change_password_change_btn">Change</string>
+    <string name="change_password_current_password_field">Current Password</string>
+    <string name="change_password_new_password_field">New Password</string>
+    <string name="change_password_confirm_password_field">Confirm Password</string>
+    <string name="change_password_forgot_password">Forgot password?</string>
+    <string name="change_password_enter_old_pass">Enter your current password to change\nit to a new one</string>
+    <string name="change_password_password_header">Password</string>
+    <string name="change_password_hint_current_password">Current Password</string>
+    <string name="change_password_enter_new_pass">Enter the new password you want\nto use to log in</string>
+    <string name="change_password_new_password_header">New Password</string>
+    <string name="change_password_new_password_again_header">New Password Again</string>
+    <string name="change_password_new_password_again_hint">Confirm New Password</string>
+    <string name="change_password_error_current_pass_is_empty">Current password is empty</string>
+    <string name="change_password_error_new_pass_is_empty">New password is empty</string>
+    <string name="change_password_error_new_pass_is_not_equals">Passwords is not equals</string>
+    <string name="change_password_successed">Password was changed</string>
+
+    <string name="documents_info_title">Documents Information</string>
+    <string name="documents_info_title_deleting">Deleting Documents </string>
+    <string name="documents_info_title_text">You can check your personal data\nand update it if necessary</string>
+    <string name="documents_info_change_btn">Change</string>
+    <string name="documents_info_update_btn">Update</string>
+    <string name="documents_info_cancel_btn">Cancel</string>
+    <string name="documents_info_name_header">Name</string>
+    <string name="documents_info_surname_header">Surname</string>
+
+    <!--Quick Bet-->
+    <string name="quick_bet_title_page">QUICK BET</string>
+    <string name="dialog_quick_bet_btn_enable">enable</string>
+    <string name="dialog_title_quick_bet">Quick Bet</string>
+    <string name="dialog_settings_quick_bet_description">Select your single bet \namount</string>
+    <string name="dialog_settings_quick_bet_btn_apply">Apply</string>
+
+    <string name="confirm_make_quick_bet_dialog_make_btn">Make</string>
+
+    <string name="match_item_bet_placed">Bet placed</string>
+    <string name="match_item_no_more_bets">No more bets</string>
+    <string name="match_item_more_3_bets">MORE 3 BETS</string>
+    <string name="match_item_the_bet_was_not_placed_try_again">No connection to server :( \nThe bet was not placed. Try again.</string>
+    <string name="something_went_wrong_bet_no_placed">Something went wrong\nThe bet was not placed.</string>
+    <string name="match_item_not_enough_money">Not enough money</string>
+    <string name="match_item_deposit">DEPOSIT</string>
+
+
+    <!-- store locator -->
+    <string name="store_locator_title">Store Locator</string>
+    <string name="store_locator_call">Call</string>
+    <string name="store_locator_navigate">Directions</string>
+    <string name="home_page_tab_live">LIVE</string>
+    <string name="home_page_tab_upcoming">UPCOMING</string>
+    <string name="home_page_tab_popular">POPULAR</string>
+
+    <string name="dialog_update_version_title">NEW VERSION</string>
+    <string name="dialog_update_version_description">Bang! We created just for you \nthe better version of app ever!\n\nPlease update and enjoy!</string>
+    <string name="dialog_update_version_update_btn">UPDATE</string>
+
+
+    <string name="dialog_blocking_gh_text">"WE ARE MAKING BETPLANET BETTER!\n\nWILL BE BACK SOON!\n\nSORRY FOR INCONVENIENCE"</string>
+    <string name="dialog_blocking_mg_title">BETPLANET IS CLOSING</string>
+    <string name="dialog_blocking_mg_text"><![CDATA[PLEASE WITHDRAW ANY BALANCES YOU HAVE IN YOUR ACCOUNT <strong><span style=\"color:#E8BC03;\">USING WEBSITE</span></strong>.<br/><br/>YOU WILL NOT BE ABLE TO MAKE A DEPOSIT OR PLACE A BET]]></string>
+    <string name="dialog_blocking_mg_btn">WITHDRAW</string>
+
+    <string name="deposit_limits_title">Deposit Limits</string>
+    <string name="deposit_limits_description">Deposit Limits enables you to limit the amount of money that you are able to deposit online into your account on either a 24 hour, 7 day and/or 30 day basis.</string>
+    <string name="deposit_limits_hour_limit_header">24 Hour Limit</string>
+    <string name="deposit_limits_day_limit_header">7 Day Limit</string>
+    <string name="deposit_limits_no_limit">No Limit</string>
+
+    <string name="account_details_main_information_caption">Main Information</string>
+    <string name="account_details_phone_number_header">Phone Number</string>
+    <string name="account_details_email_header">Email</string>
+    <string name="account_details_language_header">Language</string>
+    <string name="account_details_documents_caption">Documents Information •</string>
+    <string name="account_details_phone_number_change">Change number</string>
+    <string name="account_details_phone_number_add">Add number</string>
+    <string name="account_details_email_change">Change email</string>
+    <string name="account_details_email_add">Add email</string>
+    <string name="account_details_Language_change">Change language</string>
+
+    <string name="change_email_enter_current_pass">Enter your current password to change\nyour email address</string>
+    <string name="change_email_password_header">Password</string>
+    <string name="change_email_hint_current_password">Current Password</string>
+    <string name="change_email_enter_new_email">Enter the new email you want to use\nto log in to your account</string>
+    <string name="change_email_new_email_header">Email</string>
+    <string name="change_email_new_email_hint">New E-mail</string>
+    <string name="change_email_successed">Email was changed</string>
+    <string name="change_email_next_btn">Next</string>
+    <string name="change_email_change_btn">Change</string>
+    <string name="change_email_add_btn">Add</string>
+    <string name="change_email_error_new_email_is_empty">Email is empty</string>
+    <string name="change_email_error_new_email_is_incorrect">Email is incorrect</string>
+    <string name="change_email_error_password_invalid">Password is invalid</string>
+
+    <string name="change_phone_number_caption_phone">Current</string>
+    <string name="change_phone_number_description">Enter the new number you want to use\nto log in to your account</string>
+    <string name="change_phone_number_header">Phone Number</string>
+    <string name="change_phone_number_hint_field">-- ---- ----</string>
+    <string name="change_phone_number_enter_old_pass">Enter your current password to change\nthe number</string>
+    <string name="change_phone_dialog_phone_is_empty">Phone number is empty</string>
+    <string name="change_phone_dialog_phone_is_invalid">Phone number is invalid</string>
+    <string name="change_phone_number_phone_exists_already">Phone number is exists already in system</string>
+    <string name="change_phone_number_seconds_try_send_sms">Request code again after </string>
+
+    <!-- Documents Information Fragment -->
+    <string name="document_information_status_header">Status</string>
+    <string name="document_information_status_desc_under_review">Document on verification. It takes no more \nthan 24 hours</string>
+    <string name="document_information_status_reject_desc">Your data was rejected. The data doesn\'t match the document photo, check the highlighted fields and try again</string>
+    <string name="document_information_add_document_btn">ADD DOCUMENT</string>
+    <string name="document_information_delete_document_btn">DELETE DOCUMENT</string>
+    <string name="document_information_cancel_document_btn">Cancel</string>
+    <string name="document_information_menu_delete">Delete</string>
+    <string name="document_information_menu_close" translatable="false">@string/close</string>
+    <string name="documents_information_success_delete">Documents was deleted</string>
+    <string name="documents_information_error_delete">%s document(s) not was deleted</string>
+
+    <!-- limits and fees -->
+    <string name="limits_and_fees_deposit_min_header">Deposit Min</string>
+    <string name="limits_and_fees_deposit_max_header">Deposit Max</string>
+    <string name="limits_and_fees_deposit_commission_header">Deposit Commission</string>
+    <string name="limits_and_fees_deposit_commission_free">Free</string>
+    <string name="limits_and_fees_system_telma">Telma mvola</string>
+    <string name="limits_and_fees_system_orange">Orange lzycash</string>
+    <string name="limits_and_fees_no_limits">No results</string>
+    <string name="limits_and_fees_no_limits_description">Limits not found in service</string>
+
+    <!-- Document Details fragment -->
+    <string name="document_details_title_view_mode">Documents Information</string>
+    <string name="document_details_title_add_mode">Add Document</string>
+    <string name="document_details_description">You can check your personal data\nand update it if necessary</string>
+    <string name="document_details_document_type_header">Document</string>
+    <string name="document_details_expiration_date_header">Expiration Date</string>
+    <string name="document_details_issuing_authority_header">Issuing Authority</string>
+    <string name="document_details_issuing_place_header">Issuing Place</string>
+    <string name="document_details_issuing_date_header">Issuing Date</string>
+    <string name="document_details_document_number_header">Document Number</string>
+    <string name="document_details_country_header">Country</string>
+    <string name="document_details_document_id_header">ID</string>
+    <string name="document_details_hint_input_date">__-__-____</string>
+    <string name="document_details_change_btn">Change</string>
+    <string name="document_details_update_btn">Update</string>
+    <string name="document_details_send_document_btn">Send Document</string>
+    <string name="document_details_error_deleting">Error. Document not was deleted</string>
+    <string name="documents_info_not_exist_docs">You didn\'t add any documents</string>
+    <string name="documents_info_not_exist_docs_desc">Withdrawal will be available after\nchecking your documents</string>
+
+    <!-- dialog confirm delete document  -->
+    <string name="dialog_confirm_delete_document">Do you really want to \ndelete a document?</string>
+    <string name="dialog_confirm_delete_document_btn_yes">Yes</string>
+    <string name="dialog_confirm_delete_document_btn_no">No</string>
+    <string name="doc_photo_add">+ Add photo</string>
+    <string name="no_accounts_found">No accounts found for this provider. \n\nYou must first make a deposit.</string>
+    <string name="try_to_find_something">Try to find something for you \nin other categories</string>
+
+
+    <!-- casino -->
+    <string name="header_nav_selection_sport">Sport</string>
+    <string name="header_nav_selection_casino">Casino</string>
+
+    <string name="casino">Casino</string>
+    <string name="casino_search">Search</string>
+    <string name="casino_live">Live Casino</string>
+    <string name="casino_bet_games">Bet Games</string>
+    <string name="casino_virtuals">Virtuals</string>
+    <string name="casino_virtual_epl">Virtual EPL</string>
+    <string name="casino_spin_to_win">SPIN 2 WIN</string>
+
+    <!-- coupon booking -->
+    <string name="dialog_coupon_booking_share">Book a bet</string>
+    <string name="dialog_coupon_booking_import">Booking code</string>
+    <string name="dialog_coupon_booking_share_title">Share coupon</string>
+    <string name="dialog_coupon_booking_share_subtitle">You can share the coupon number with another person</string>
+    <string name="dialog_coupon_booking_share_subtitle2">Number:</string>
+    <string name="dialog_coupon_booking_share_action_button1">Share link</string>
+    <string name="dialog_coupon_booking_share_action_button2">Share number</string>
+    <string name="dialog_coupon_booking_import_title">Import coupon</string>
+    <string name="dialog_coupon_booking_import_subtitle">Enter coupon booking number:</string>
+    <string name="dialog_coupon_booking_import_subtitle2">Number:</string>
+    <string name="dialog_coupon_booking_import_action_button">Import</string>
+
+
+    <string name="generic_ok">Ok</string>
+
+    <!-- paybill instructions dialog -->
+    <string name="paybill_instructions_title">How to make a deposit via Paybill</string>
+    <string name="paybill_instructions_body">
+        1. Dial *713*777# from your mobile phone.
+        \n\n2. Input your registered mobile number from your Operator.
+        \n\n3. Provide the amount you wish to deposit.
+        \n\n4. Wait for a confirmation message from Operator, then validate the transaction
+        by typing your PIN
+        \n\n5. Your account will be topped up immediately.
+    </string>
+    <string name="live_time_event_ended">Ended</string>
+    <string name="live_time_event_stopped">HT</string>
+
+    <string name="contact_us_title_controller">CONTACT US</string>
+    <string name="contact_us_support_email">@string/support_email</string>
+</resources>

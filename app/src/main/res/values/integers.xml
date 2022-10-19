@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="max_lines_limit_range_text">3</integer>
+    <integer name="count_indicator_pin_code">4</integer>
+    <integer name="count_two_pincode">8</integer>
+    <integer name="count_verify_sms">6</integer>
+</resources>

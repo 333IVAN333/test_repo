@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_sport"
+        android:icon="@drawable/ic_menu_sport_selector"
+        android:title="@string/menu_sport" />
+    <item
+        android:id="@+id/menu_game_history"
+        android:icon="@drawable/ic_menu_game_history_selector"
+        android:title="@string/menu_game_history" />
+    <item
+        android:id="@+id/menu_fake_item"
+        android:enabled="false"
+        android:title="" />
+    <item
+        android:id="@+id/menu_favorite"
+        android:icon="@drawable/ic_menu_favorites_selector"
+        android:title="@string/menu_favorite" />
+    <item
+        android:id="@+id/menu_transactions"
+        android:icon="@drawable/ic_menu_transactions_selector"
+        android:title="@string/menu_transactions" />
+</menu>

@@ -1,0 +1,489 @@
+<resources>
+
+    <style name="BaseAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/yellow</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+        <item name="textInputStyle">@style/Bet.Widget.TextInputLayout</item>
+        <item name="materialButtonStyle">@style/AppTheme.MaterialButton</item>
+        <item name="android:buttonStyle">@style/AppTheme.MaterialButton</item>
+        <item name="betTextColorPrimary">@color/textPrimaryColor</item>
+        <item name="betTextColorSecondary">@color/textSecondaryColor</item>
+        <item name="betTextBorderlessButton">@color/button_secondary_color_selector</item>
+        <item name="borderlessButtonStyle">@style/AppTheme.MaterialButton.Borderless</item>
+
+        <item name="checkboxStyle">@style/AppTheme.CheckBox</item>
+        <item name="android:checkboxStyle">@style/AppTheme.CheckBox</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+    </style>
+
+    <!-- Временная тема, пока не адаптировали под эту тему все приложение  -->
+    <style name="AppTheme.New" parent="BaseAppTheme">
+
+    </style>
+
+    <style name="AppTheme.New.Launcher">
+        <item name="android:windowBackground">@color/colorMidnightExpress</item>
+        <item name="android:colorPrimaryDark">@color/colorMidnightExpress</item>
+    </style>
+
+    <style name="AppTheme.New.Dark">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_blue_primary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="betTextColorPrimary">@color/textPrimaryColorDark</item>
+        <item name="betTextColorSecondary">@color/textSecondaryColorDark</item>
+        <item name="betTextBorderlessButton">@color/textPrimaryColorDark</item>
+        <item name="colorControlHighlight">@color/colorWhite</item>
+    </style>
+
+    <style name="AppThemeOverlay.SearchView" parent="AppTheme">
+        <item name="searchViewStyle">@style/AppTheme.SearchView</item>
+        <item name="android:searchViewStyle">@style/AppTheme.SearchView</item>
+        <item name="android:textAppearanceMediumInverse">@style/AppTheme.TextAppearance.SearchView
+        </item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bg_bottom_sheet</item>
+    </style>
+
+    <style name="Clickable">
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="ErrorTextStyle">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/colorErrorPinIndicator</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="VerifySmsCode">
+        <item name="android:textColor">@color/textPrimaryColor</item>
+        <item name="android:textSize">22sp</item>
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!--TODO remove this style after re-design colors-->
+    <style name="DialogTitleText">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:textColor">@color/colorNavy50</item>
+    </style>
+
+    <style name="SmsPinCodeTitleText">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:textColor">@color/colorNavy</item>
+    </style>
+
+    <style name="DialogText">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:textColor">@color/colorNavy</item>
+    </style>
+
+    <style name="CouponDialogTitleText">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorMidnightExpress</item>
+    </style>
+
+    <style name="CouponDialogText">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/colorManatee</item>
+    </style>
+
+    <style name="DialogLargeText">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">montserrat_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/colorNavy</item>
+    </style>
+
+    <style name="SnackDescriptionText">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:textColor">@color/colorBattleshipGrey</item>
+    </style>
+
+    <style name="ActiveCompetitor" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/yellow</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="SportNameCountMatches" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#8D95A9</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="FreeBetAmount" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#8D95A9</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="ScoreText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorMidnightExpress</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DateTextOnMatch" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorManatee</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppTheme.MaterialButton" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:textAppearance">@style/AppTheme.TextAppearance.MaterialButton</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="backgroundTint">@color/yellow</item>
+        <item name="cornerRadius">4dp</item>
+        <item name="android:textColor">@color/button_primary_color_selector</item>
+    </style>
+
+    <!-- buttons styles -->
+    <style name="AppTheme.MaterialButton.Borderless" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textAppearance">@style/AppTheme.TextAppearance.BorderlessButton</item>
+        <item name="android:textColor">?betTextBorderlessButton</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="cornerRadius">4dp</item>
+    </style>
+
+    <style name="AppTheme.MaterialButton.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textAppearance">@style/AppTheme.TextAppearance.OutlinedButton</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="strokeColor">@color/yellow</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="cornerRadius">4dp</item>
+        <item name="android:textColor">@color/button_primary_color_selector</item>
+    </style>
+
+    <style name="AppTheme.TextAppearance.MaterialButton" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+    </style>
+
+    <!-- text apperance -->
+    <style name="AppTheme.TextAppearance.OutlinedButton" parent="AppTheme.TextAppearance.BorderlessButton">
+        <item name="textAllCaps">true</item>
+        <item name="fontFamily">@font/montserrat_bold</item>
+    </style>
+
+    <style name="AppTheme.TextAppearance.BorderlessButton" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">15sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+    </style>
+
+    <style name="AppTheme.TextAppearance.TextView" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textColor">?betTextColorSecondary</item>
+        <item name="android:textColorHint">?betTextColorSecondary</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="AppTheme.TextAppearance.Headings16" parent="TextAppearance.AppCompat.Title">
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+        <item name="android:textColor">?betTextColorPrimary</item>
+    </style>
+
+    <style name="AppTheme.TextAppearance.Caption" parent="TextAppearance.AppCompat.Title">
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+        <item name="android:textColor">@color/textPrimaryColor</item>
+    </style>
+
+    <style name="AppTheme.TextAppearance.Headings.Bold" parent="TextAppearance.AppCompat.Title">
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+        <item name="android:textColor">?betTextColorPrimary</item>
+    </style>
+
+    <!-- from design system: Base Text (16, Medium) -->
+    <style name="AppTheme.TextAppearance.BaseMedium" parent="TextAppearance.AppCompat.Title">
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+        <item name="android:textColor">?betTextColorPrimary</item>
+    </style>
+
+    <style name="AppTheme.TextAppearance.BaseMedium.12">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppTheme.TextAppearance.BaseMedium.16">
+        <item name="android:textSize">15sp</item> <!-- просили уменьшить размер текстов-->
+    </style>
+
+    <style name="AppTheme.TextAppearance.BaseMedium.12.Secondary">
+        <item name="android:textColor">?betTextColorSecondary</item>
+    </style>
+
+    <style name="AppTheme.TextAppearance.BaseMedium.16.Secondary">
+        <item name="android:textColor">?betTextColorSecondary</item>
+    </style>
+
+    <style name="AppTheme.TextAppearance.SearchView" parent="AppTheme.TextAppearance.TextView">
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">?betTextColorSecondary</item>
+    </style>
+
+    <style name="AppTheme.TextAppearance.EventPageTitle" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="AppTheme.TextAppearance.TextView.Navigation">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/bottom_navigation_color_selector</item>
+    </style>
+
+    <style name="Bet.Widget.TextInputLayout" parent="Widget.Design.TextInputLayout" />
+
+    <!-- text input styles -->
+    <style name="AppTheme.CheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:textAppearance">@style/AppTheme.TextAppearance.TextView</item>
+        <item name="android:textColor">?betTextColorSecondary</item>
+    </style>
+
+    <!-- other view -->
+    <style name="AppTheme.SearchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:background">@drawable/bg_search_view</item>
+
+        <item name="iconifiedByDefault">false</item>
+        <item name="android:iconifiedByDefault">false</item>
+
+        <item name="queryBackground">@android:color/transparent</item>
+        <item name="android:queryBackground">@android:color/transparent</item>
+
+        <item name="searchIcon">@drawable/ic_baseline_search_24</item>
+        <item name="android:searchIcon">@drawable/ic_baseline_search_24</item>
+    </style>
+
+    <style name="CustomSwitchTheme">
+        <!-- active thumb & track color -->
+        <item name="colorControlActivated">@color/yellow</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">#ECEBEC</item>
+    </style>
+
+    <style name="ListItemSwitch" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/min_height_list_item_with_switch</item>
+        <item name="android:textColor">#132345</item>
+        <item name="theme">@style/CustomSwitchTheme</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="ListItemSplitLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/colorGrey</item>
+    </style>
+
+    <style name="LimitsSplitLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/grey_light</item>
+    </style>
+
+    <style name="LimitsHeaderField">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/grey_dark</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:minHeight">49dp</item>
+        <item name="android:paddingStart">@dimen/padding_base</item>
+    </style>
+
+    <style name="LimitsField">
+        <item name="android:layout_gravity">top</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_blue_primary</item>
+        <item name="android:gravity">center_vertical|end</item>
+        <item name="android:minHeight">49dp</item>
+        <item name="android:paddingStart">@dimen/padding_base</item>
+        <item name="android:paddingEnd">@dimen/padding_base</item>
+    </style>
+
+    <!-- region Account Details styles  -->
+    <style name="AccountDetails" parent="AppTheme.New" />
+
+    <style name="AccountDetails.HeaderField">
+        <item name="android:textAppearance">@style/AppTheme.TextAppearance.BaseMedium</item>
+        <item name="android:textColor">@color/colorMidnightExpress50</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:minHeight">24dp</item>
+        <item name="android:layout_marginTop">@dimen/margin_base</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:gravity">center_vertical|start</item>
+    </style>
+
+    <style name="AccountDetails.ValueField">
+        <item name="android:textAppearance">@style/AppTheme.TextAppearance.BaseMedium</item>
+        <item name="android:textColor">@color/color_blue_primary_new</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">24dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:layout_marginTop">@dimen/margin_half</item>
+    </style>
+
+    <style name="AccountDetails.ButtonAction">
+        <item name="android:textAppearance">@style/AppTheme.TextAppearance.BaseMedium</item>
+        <item name="android:textColor">@color/color_link</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:minHeight">24dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:gravity">center_vertical|end</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="AccountDetails.CaptionPart">
+        <item name="android:textAppearance">@style/AppTheme.TextAppearance.Headings.Bold</item>
+        <item name="android:textColor">@color/color_blue_primary_new</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:drawablePadding">16dp</item>
+    </style>
+
+    <!-- endregion   -->
+
+    <!-- region Account Details styles  -->
+    <style name="DocumentDetails" parent="AppTheme.New" />
+
+    <style name="DocumentDetails.HeaderField">
+        <item name="android:textAppearance">@style/AppTheme.TextAppearance.BaseMedium</item>
+        <item name="android:textColor">@color/textSecondaryColor</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:minHeight">17dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="DocumentDetails.HeaderField.ErrorState" parent="DocumentDetails.HeaderField">
+        <item name="android:textColor">@color/color_error</item>
+    </style>
+
+    <style name="DocumentDetails.TextInputLayout">
+        <item name="errorEnabled">true</item>
+        <item name="errorTextColor">@color/color_error</item>
+        <item name="hintAnimationEnabled">false</item>
+        <item name="hintEnabled">false</item>
+    </style>
+
+    <style name="DocumentDetails.InputField">
+        <item name="android:background">@drawable/bg_input_field</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:enabled">false</item>
+        <item name="android:importantForAutofill">no</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:minHeight">44dp</item>
+        <item name="android:paddingStart">@dimen/padding_base</item>
+        <item name="android:paddingEnd">@dimen/padding_base</item>
+        <item name="android:textAppearance">@style/AppTheme.TextAppearance.BaseMedium.16</item>
+        <item name="android:textColor">@color/field_text_color_selector</item>
+        <item name="android:textColorHint">?betTextColorSecondary</item>
+    </style>
+
+    <style name="DocumentDetails.InputField.ErrorState" parent="DocumentDetails.InputField">
+        <item name="android:background">@drawable/bg_input_field_error</item>
+    </style>
+
+    <style name="DocumentDetails.InputField.Dropdown">
+        <item name="android:drawableEnd">@drawable/ic_arrow_down_small</item>
+    </style>
+
+    <style name="DocumentDetails.InputField.Calendar">
+        <item name="android:drawableEnd">@drawable/ic_calendar_selector</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:hint">@string/document_details_hint_input_date</item>
+    </style>
+
+    <style name="TransactionFilterItemStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:drawableEnd">@drawable/ic_check_with_circle_selector</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">@dimen/margin_base</item>
+        <item name="android:paddingEnd">@dimen/margin_base</item>
+        <item name="android:textColor">#132345</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:background">?selectableItemBackground</item>
+    </style>
+
+    <style name="TransactionFilterItemDividerStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginStart">6dp</item>
+        <item name="android:layout_marginEnd">6dp</item>
+        <item name="android:background">#D5DADE</item>
+    </style>
+
+    <!-- endregion   -->
+
+</resources>
